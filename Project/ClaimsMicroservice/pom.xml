@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.demo</groupId>
-	<artifactId>PensionerDetailMicroservice</artifactId>
+	<artifactId>ClaimsMicroservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PensionerDetailMicroservice</name>
+	<name>ClaimsMicroservice</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -61,17 +61,12 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
-	
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-				<finaName>PensionerDetailMicroservice</finaName>
-			   <skipTests>true</skipTests>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -84,5 +79,14 @@
 				<enabled>false</enabled>
 			</releases>
 		</repository>
-		</repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 </project>
